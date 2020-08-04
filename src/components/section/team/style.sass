@@ -1,0 +1,51 @@
+.col__team // стили для блока разработчика 
+    position: relative
+    display: flex
+    justify-content: center
+    &:hover .team__content
+        transition: all 1s ease
+        opacity: 1
+.team__content // контент появляющийся при наведении
+    background-color: #6df6eb
+    transition: all 2s ease
+    opacity: 0
+    position: absolute
+    min-height: 13em
+    width: 85%
+    padding: 20px
+    bottom: 20px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &::after // треугольник 
+        content: ""
+        position: absolute
+        top: -30px
+        left: 15px
+        border-left: 15px solid transparent
+        border-right: 15px solid transparent
+        border-bottom: 30px solid #6df6eb
+.row__team // row для name и должности разработчика
+    display: flex
+    align-items: center
+    margin-bottom: 20px    
+.title__team // name разработчика
+    color: #272727
+    font-family: Merriweather
+    font-size: 1.25rem
+    font-weight: 700
+    margin-right: 10px
+.desc__team // должность разработчика
+    font-size: 0.9375rem
+    letter-spacing: 0.03em
+    color: #767070
+.text__team // текст описывающий разработчика
+    line-height: 24px
+.nav__cosial // ul социальный сетей разработчика
+    display: flex
+    margin: 0 -15px
+.link__cosial // ссылка социальный сетей разработчика
+    font-family: "FontAwesome"
+    font-weight: 900
+    display: block
+    margin: 0 10px

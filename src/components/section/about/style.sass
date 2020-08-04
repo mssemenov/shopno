@@ -1,0 +1,46 @@
+.section__index
+    padding: 130px 0
+.section__gray
+    background-color: #f8fafa
+.box__title // block для index title
+    color: #000
+    text-transform: uppercase
+    text-align: center
+    margin-bottom: 100px 
+.title__index // index title
+   font-family: Montserrat
+   font-size: 38px
+   font-weight: 700
+   line-height: 65px
+.subtitle__index // index подзаголовок
+   font-family: Merriweather
+   font-size: 1.0625rem
+.title__items // все заголовки h3!
+    font-family: Merriweather
+    font-size: 1.25rem
+    line-height: 29px
+    font-weight: 700
+    text-transform: uppercase
+    margin-bottom: 30px
+.box__slaider // единица слайдера
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+.slaider__img // img слайдера
+    position: relative
+    z-index: 2
+    &::after // bg за img слайдера
+        background-color: #eff0f2
+        width: 100%
+        content: ""
+        position: absolute
+        height: 80%
+        left: -30px
+        top: 10%
+        z-index: -1
+        padding: 0 30px
+.slaider__content // контент слайдера
+    width: 40%
+.slaider__text // text слайдера
+    &:not(:last-child)   
+        margin-bottom: 45px 

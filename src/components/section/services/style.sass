@@ -1,0 +1,58 @@
+.box__services // full box для сервиса
+    display: flex
+    margin: 0 -15px
+    flex-wrap: wrap
+    
+.block__services // единица блока сервиса
+    margin: 0 15px
+    margin-bottom: 30px
+    // padding: 20px 50px
+    &:nth-child(odd)  // каждый 1 блок сервиса     
+        width: 55%
+    &:nth-child(even)  // каждый 2 блок сервиса         
+        width: 35%
+.box__serivces__index //  краткая информация о единице сервира
+    position: relative
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: right
+    min-height: 20em
+    height: 100%
+    color: #fff
+    &::after // темный bg сервиса
+        left: 0
+        top: 0
+        content: ""
+        width: 100%
+        height: 100%
+        position: absolute
+        background-color: rgba(0, 0, 0, 0.6)
+.box__content // контейнер для контента  краткая информация о единице сервира
+    position: relative
+    z-index: 3
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: 100%
+    
+.box__data //  контент краткая информация о единице сервира
+    width: 70%
+.bnt__services__more // кнопка подробнее
+    cursor: pointer
+    font-family: Raleway
+    font-weight: 500
+    letter-spacing: 0.04em
+    color: #f9fbfb  
+.services__text // текст 
+    margin-bottom: 25px
+.box__serivces__subindex  // доп контент
+    background-color: #6df6eb
+    height: 100%
+    padding: 50px 30px 25px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+.bnt__close
+    width: 20px
+    cursor: pointer
